@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>GDSC - API Fetching</title>
+  </head>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 100vw;
+      height: 100vh;
+    }
+    span:hover{
+      color: orange;
+     font-size: 110%;
+    }
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+      font-size: 115%;
+    }
+    .Name{
+      color: orange;
+      font-weight: bolder;
+      font-size: 200%;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid mx-5 my-2">
+        <a class="navbar-brand" href="#"><H2>GDSC</H2></a>
+        </button>
+        <div  id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="padding-left: 20px;">
+              <button type="button" class="btn btn-primary"><a class="nav-link active" aria-current="page" href="GDSC1.html"><span>Image Details</span></a></button>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container" style="color: white; background-color: black;">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                    <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name1"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name2"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data2"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name3"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data3"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name4"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data4"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name5"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data5"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name6"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data6"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name7"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data7"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name8"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data8"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name9"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data9"></div>
+              </div>
+              <div class="carousel-item">
+                <div style="width: 70vw; padding-left: 10vw;" class="Name" id="name10"></div>
+                <div style="width: 70vw; padding-left: 10vw;" id="data10"></div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="shuffleBtn">Shuffle</button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
+  </body>
+<script>
+    const getInfo = async () => {
+        let url = `https://jsonplaceholder.typicode.com/users`;
+        let response = await fetch(url);
+        let data = await response.json();
+        let arrData = [data];
+        for (let index = 0; index < arrData[0].length; index++) {
+            let name = document.getElementById(`name${index+1}`);
+            let data = document.getElementById(`data${index+1}`);
+            name.innerHTML=`${arrData[0][index].name}`;
+            data.innerHTML=`Username :- ${arrData[0][index].username} <br> Email :- ${arrData[0][index].email} <br> Address <br> Street :- ${arrData[0][index].address.street} <br> Suite :- ${arrData[0][index].address.suite} <br> City :- ${arrData[0][index].address.city} <br> Zip Code :- ${arrData[0][index].address.zipcode} <br> Geographical latitude = ${arrData[0][index].address.geo.lat} <br> Geographical longitude = ${arrData[0][index].address.geo.lng} <br> Phone no : ${arrData[0][index].phone} <br> Website : ${arrData[0][index].website} <br> Company <br> Name : ${arrData[0][index].company.name} <br> Catch Phrase : ${arrData[0][index].company.catchPhrase} <br> BS : ${arrData[0][index].company.bs}`;
+        }
+      
+      let shuffleBtn=document.getElementById("shuffleBtn");
+      shuffleBtn.addEventListener("click",()=>{
+        shuffleInfo();
+      })
+      let temp=null;
+      function shuffleInfo(){
+        for (let index = arrData[0].length-1; index > 0; index-=1) {
+          let j= Math.floor(Math.random()*(index+1));
+          temp=arrData[0][index];
+          arrData[0][index]=arrData[0][j];
+          arrData[0][j]=temp;
+        }
+        for (let index = 0; index < arrData[0].length; index++) {
+            let name = document.getElementById(`name${index+1}`);
+            let data = document.getElementById(`data${index+1}`);
+            name.innerHTML=`${arrData[0][index].name}`;
+            data.innerHTML=`Username :- ${arrData[0][index].username} <br> Email :- ${arrData[0][index].email} <br> Address <br> Street :- ${arrData[0][index].address.street} <br> Suite :- ${arrData[0][index].address.suite} <br> City :- ${arrData[0][index].address.city} <br> Zip Code :- ${arrData[0][index].address.zipcode} <br> Geographical latitude = ${arrData[0][index].address.geo.lat} <br> Geographical longitude = ${arrData[0][index].address.geo.lng} <br> Phone no : ${arrData[0][index].phone} <br> Website : ${arrData[0][index].website} <br> Company <br> Name : ${arrData[0][index].company.name} <br> Catch Phrase : ${arrData[0][index].company.catchPhrase} <br> BS : ${arrData[0][index].company.bs}`;
+        }
+      }
+    }
+    getInfo();
+</script>
+
+</html>
